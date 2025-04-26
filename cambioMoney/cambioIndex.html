@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="cambioStyle.css">
+  <meta name="description" content="Um conversor de moedas simples e eficiente.">
+  <meta name="author" content="Luiz Gustavo Dacome Damas">
+  <meta name="keywords" content="conversor, moedas, câmbio, dinheiro, finanças">
+</head>
+<body>
+  <header class="principalHeader">
+    <div class="header-container">
+      <h1 class="site-title">Conversor de Moedas</h1>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li><a href="../Menu/menu.html" class="nav-link">Início</a></li>
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="principalMain">
+    <section class="converter-section" id="home">
+      <h2 class="section-title">Converter Moeda</h2>
+      <form id="converterForm" class="converter-form">
+        <label for="amount" class="form-label">Valor:</label>
+        <input type="number" id="amount" class="form-input" placeholder="Digite o valor" required>
+        
+        <label for="fromCurrency" class="form-label">De:</label>
+        <select id="fromCurrency" class="form-select" required>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="GBP">Libra (GBP)</option>
+          <option value="AUD">Dólar Australiano (AUD)</option>
+          <option value="CAD">Dólar Canadense (CAD)</option>
+          <option value="CHF">Franco Suíço (CHF)</option>
+          <option value="CNY">Yuan Chinês (CNY)</option>
+          <option value="NZD">Dólar Neozelandês (NZD)</option>
+          <option value="SEK">Coroa Sueca (SEK)</option>
+          <option value="NOK">Coroa Norueguesa (NOK)</option>
+        </select>
+        <label for="toCurrency" class="form-label">Para:</label>
+        <select id="toCurrency" class="form-select" required>
+          <option value="USD">Dólar (USD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="BRL">Real (BRL)</option>
+          <option value="JPY">Iene (JPY)</option>
+          <option value="GBP">Libra (GBP)</option>
+          <option value="AUD">Dólar Australiano (AUD)</option>
+          <option value="CAD">Dólar Canadense (CAD)</option>
+          <option value="CHF">Franco Suíço (CHF)</option>
+          <option value="CNY">Yuan Chinês (CNY)</option>
+          <option value="NZD">Dólar Neozelandês (NZD)</option>
+          <option value="SEK">Coroa Sueca (SEK)</option>
+          <option value="NOK">Coroa Norueguesa (NOK)</option>
+        </select>
+        <button type="submit" class="form-button">Converter</button>
+      </form>
+      <div id="result" class="result-container">
+        <!-- Here is gonna show results -->
+      </div>
+    </section>
+  </main>
+ <footer class="principalFooter">
+    <div class="footer-container">
+      <p class="footer-text">© 2025 Conversor de Moedas. Todos os direitos reservados.</p>
+      <p class="footer-text">Desenvolvido por Luiz Gustavo Dacome Damas</p>
+    </div>
+  </footer>
+</body>
+<script src="cambioScript.js"></script>
+</html>
