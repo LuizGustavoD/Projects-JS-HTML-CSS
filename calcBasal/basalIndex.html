@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc Basal</title>
+  <link rel="stylesheet" href="basalStyle.css">
+</head>
+<body>
+  <header class="mainHeader">
+    <h1 class="mainTitle">Calc Basal</h1>
+  </header>
+  <main class="principalMain">
+    <section class="mainSection">
+      <h2 class="sectionTitle">Calculate Your Basal Rate</h2>
+      <form id="basalForm" class="formBasal" action="calcBasal.php" method="post">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+        
+        <label for="activityLevel">Activity Level:</label>
+        <select id="activityLevel" name="activityLevel" required>
+          <option value="">Select...</option>
+          <option value="sedentary">Sedentary</option>
+          <option value="light">Lightly Active</option>
+          <option value="moderate">Moderately Active</option>
+          <option value="active">Active</option>
+          <option value="veryActive">Very Active</option>
+        </select>
+        <input type="number" name="height" id="height" placeholder="Height (cm)" required>
+        <input type="number" name="age" id="age" placeholder="Age (years)" required>
+        <select name="gender" id="gender">
+          <option value="">Select Gender...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <button type="submit" class="submitButton">Calculate</button>
+      </form>
+    </section>
+
+    <section class="resultSection">
+      <div class="finalResult" id="finalResult">
+        <!-- Dinamic -->
+      </div>
+    </section>
+  </main>
+  <footer class="mainFooter">
+    <p class="copy">&copy; 2023 Your Company Name</p>
+    <p class="rights">All rights reserved.</p>
+  </footer>
+</body>
+<script src="basalScript.js"></script>
+</html>
