@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora Simples</title>
+</head>
+<body class="white-theme"> <!-- Tema padrão: claro -->
+
+  <header class="cabecalho"></header>
+
+  <div class="container">
+    <div class="container__calc">
+      <div class="calc__display">
+        <input type="text" id="display" disabled placeholder="Sua operação aqui" class="calc__input">
+      </div>
+      <div class="calc__buttons">
+  <!-- Primeira linha -->
+  <button class="btn btn--clear" id="clear">C</button>
+  <button class="btn btn--operator" id="divide">/</button>
+  <button class="btn btn--operator" id="multiply">*</button>
+
+  <!-- Segunda linha -->
+  <button class="btn btn--number" id="seven">7</button>
+  <button class="btn btn--number" id="eight">8</button>
+  <button class="btn btn--number" id="nine">9</button>
+
+  <!-- Terceira linha -->
+  <button class="btn btn--number" id="four">4</button>
+  <button class="btn btn--number" id="five">5</button>
+  <button class="btn btn--number" id="six">6</button>
+
+  <!-- Quarta linha -->
+  <button class="btn btn--number" id="one">1</button>
+  <button class="btn btn--number" id="two">2</button>
+  <button class="btn btn--number" id="three">3</button>
+
+  <!-- Quinta linha -->
+  <button class="btn btn--operator" id="subtract">-</button>
+  <button class="btn btn--operator" id="add">+</button>
+  <button class="btn btn--equal" id="equal">=</button>
+
+  <!-- Sexta linha -->
+  <button class="btn btn--number" id="zero">0</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="theme">
+    <input type="button" value="black" id="btn-dark">
+    <input type="button" value="white" id="btn-light">
+  </div>
+  <script src="blacktheme.js"></script>
+  <script src="JS.js"></script>
+</body>
+</html>
