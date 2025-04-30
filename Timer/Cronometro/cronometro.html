@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cronômetro</title>
+</head>
+<body class="light-mode"> <!-- Tema padrão: claro -->
+  <header class="header"></header>
+
+  <main>
+    <div class="container">
+      <div class="buttonsChangeTimeLess">
+        <button id="lessHour">-</button>
+        <button id="lessMinute">-</button>
+        <button id="lessSecond">-</button>
+      </div>
+
+      <div class="clock_display" id="clockDisplay">
+        00:00:00
+      </div>
+
+      <div class="buttonsChangeTimeMore">
+        <button id="addHour">+</button>
+        <button id="addMinute">+</button>
+        <button id="addSecond">+</button>
+      </div>
+
+      <div class="buttonsPlay">
+        <button id="start" value="start">Iniciar</button>
+        <button id="pause" value="pause">Pausar</button>
+        <button id="reset" value="reset">Reiniciar</button>
+      </div>
+
+      <div class="buttonsTheme">
+        <button id="white" value="white-mode" class="active">Light</button>
+        <button id="black" value="dark-mode">Dark</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

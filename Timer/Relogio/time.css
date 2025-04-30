@@ -1,0 +1,64 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main{
+  height: 100%;
+}
+
+.header{
+  display: flex;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+
+.clock_display{
+  font-size: 6.5em;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.white_display{
+  background-color: white;
+  color: rgb(77, 74, 74);
+  border: 2px solid #ccc;
+}
+
+.dark_display{
+  background-color: rgba(17, 17, 17, 0.589);
+  color: rgb(21, 255, 0);
+}
+
+.buttons button{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+.buttons button:active{
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
